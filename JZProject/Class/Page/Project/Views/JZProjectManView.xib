@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JZProjectManView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目负责人:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyZ-KK-y1Z">
+                    <rect key="frame" x="10" y="0.0" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="BT9-1t-8sO"/>
+                        <constraint firstAttribute="height" constant="30" id="qQf-jU-5C7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXJ-tJ-kUF">
+                    <rect key="frame" x="88" y="0.0" width="132" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15659891764" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVZ-qH-pTh">
+                    <rect key="frame" x="285" y="0.0" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="6HK-GC-vQf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNy-K5-BTl">
+                    <rect key="frame" x="220" y="0.0" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="12M-oi-hgz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XNy-K5-BTl" firstAttribute="leading" secondItem="aXJ-tJ-kUF" secondAttribute="trailing" id="8En-mh-ULa"/>
+                <constraint firstItem="XNy-K5-BTl" firstAttribute="height" secondItem="KyZ-KK-y1Z" secondAttribute="height" id="FHi-yJ-ZHS"/>
+                <constraint firstAttribute="trailing" secondItem="nVZ-qH-pTh" secondAttribute="trailing" id="GFR-2x-ias"/>
+                <constraint firstItem="KyZ-KK-y1Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Isq-0j-IcZ"/>
+                <constraint firstItem="aXJ-tJ-kUF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NUl-0c-ZIM"/>
+                <constraint firstItem="KyZ-KK-y1Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Z5e-pc-0uu"/>
+                <constraint firstItem="aXJ-tJ-kUF" firstAttribute="height" secondItem="KyZ-KK-y1Z" secondAttribute="height" id="edY-KB-kTj"/>
+                <constraint firstItem="nVZ-qH-pTh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="evu-M4-UQx"/>
+                <constraint firstItem="nVZ-qH-pTh" firstAttribute="leading" secondItem="XNy-K5-BTl" secondAttribute="trailing" constant="5" id="fsI-Ma-YSd"/>
+                <constraint firstItem="XNy-K5-BTl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rSG-7O-ceg"/>
+                <constraint firstItem="nVZ-qH-pTh" firstAttribute="height" secondItem="KyZ-KK-y1Z" secondAttribute="height" id="vY1-gH-n2X"/>
+                <constraint firstItem="aXJ-tJ-kUF" firstAttribute="leading" secondItem="KyZ-KK-y1Z" secondAttribute="trailing" constant="3" id="yxl-hJ-3dU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label1" destination="KyZ-KK-y1Z" id="mKu-e1-PdI"/>
+                <outlet property="label2" destination="aXJ-tJ-kUF" id="i67-kO-pD2"/>
+                <outlet property="leftTitleL" destination="KyZ-KK-y1Z" id="uvq-3M-bdY"/>
+                <outlet property="phoneLabel" destination="nVZ-qH-pTh" id="Nq8-m7-y9I"/>
+            </connections>
+        </view>
+    </objects>
+</document>

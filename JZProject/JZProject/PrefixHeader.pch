@@ -1,0 +1,59 @@
+//
+//  PrefixHeader.pch
+//  JZProject
+//
+//  Created by zjz on 2019/6/21.
+//  Copyright © 2019 zjz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "UIButton+LXMImagePosition.h"
+#import "JZTost.h"
+#import "JZProgress.h"
+#import <MJRefresh/MJRefresh.h>
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#   define JZLog(...)  NSLog(__VA_ARGS__)
+#else
+#   define JZLog(...)
+#endif
+
+//let isiphoneX = UIApplication.shared.statusBarFrame.height >= 44
+#define statusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+#define isIphoneX   statusBarHeight > 20?YES:NO
+#define tabbarHeight         (statusBarHeight > 20 ? (49.f+34.f) : 49.f)
+#define tabbarSafeBottomMargin         (statusBarHeight > 20 ? 34.f : 0.f)
+#define statusBarAndNavigationBarHeight  (statusBarHeight > 20 ? 88.f : 64.f)
+
+#define scrollviewHeight  ([UIApplication sharedApplication].statusBarFrame.size.height -(statusBarHeight > 20 ? (49.f+34.f) : 49.f) -(statusBarHeight > 20 ? 34.f : 0.f)-(statusBarHeight > 20 ? 88.f : 64.f))
+
+#define customBottomBarHeight 60
+//#define zbLogin @"http://114.116.19.246/zabbix/api_jsonrpc.php"
+#define baseUrl @"http://api.fire2008.com.cn/operationscenter"
+
+#define user_name_save @"userName"
+#define user_pass_word_save @"userPassWord"
+#define notification_alart @"notification_alart"
+#define notification_record @"notification_record"
+#define notification_eventwarringId @"notification_eventwarringId"
+
+#define Width  [[UIScreen mainScreen] bounds].size.width
+#define Height [[UIScreen mainScreen] bounds].size.height
+#define AJNotification   [NSNotificationCenter defaultCenter]
+#define GrayColor2    [UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1]
+#define GrayColor1   [UIColor colorWithRed:236/255.0 green:236/255.0 blue:236/255.0 alpha:1]
+#define GeneralColor [UIColor colorWithRed:0.992 green:0.831 blue:0.192 alpha:1.000]
+#define TopColor     [UIColor colorWithRed:123/255.0 green:204/255.0 blue:241/255.0 alpha:1.0]
+
+
+#endif /* PrefixHeader_pch */

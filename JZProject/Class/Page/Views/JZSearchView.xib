@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JZSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-5h-wlT">
+                    <rect key="frame" x="10" y="10" width="306" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yCA-QT-1KJ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-Ly-xMH">
+                    <rect key="frame" x="326" y="15" width="60" height="30"/>
+                    <color key="backgroundColor" red="0.26254451400000001" green="0.62871519730000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="gOp-vw-ciA"/>
+                        <constraint firstAttribute="height" constant="30" id="vcX-Xj-BEz"/>
+                    </constraints>
+                    <state key="normal" title="搜索"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fLB-Ly-xMH" firstAttribute="leading" secondItem="ahO-5h-wlT" secondAttribute="trailing" constant="10" id="0H7-np-o9N"/>
+                <constraint firstItem="fLB-Ly-xMH" firstAttribute="centerY" secondItem="ahO-5h-wlT" secondAttribute="centerY" id="9Py-Cr-GpJ"/>
+                <constraint firstItem="ahO-5h-wlT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="AX9-Wt-D7B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fLB-Ly-xMH" secondAttribute="trailing" constant="10" id="RtR-bb-a9D"/>
+                <constraint firstItem="ahO-5h-wlT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZBA-o8-lLI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="searchBtn" destination="fLB-Ly-xMH" id="bBq-dI-8se"/>
+                <outlet property="searchView" destination="ahO-5h-wlT" id="bwQ-8C-3C8"/>
+            </connections>
+            <point key="canvasLocation" x="-174" y="-206"/>
+        </view>
+    </objects>
+</document>
