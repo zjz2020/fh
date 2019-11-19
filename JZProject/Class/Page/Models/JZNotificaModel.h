@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *faultid;
 ///通知类型  1告警 2.项目管理  3.人员管理
 @property(nonatomic,copy)NSString *type;
+///警告事件状态
+@property(nonatomic,strong)NSNumber *warringstatus;
 @end
 
 NS_ASSUME_NONNULL_END

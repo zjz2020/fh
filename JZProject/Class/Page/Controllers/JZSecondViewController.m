@@ -149,11 +149,15 @@ static NSString *NODE_CELL_ID = @"zhuanti_cell_id";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
       JZNotificaModel *model = self.noticeList[indexPath.row];
+    NSString *faultStatus = @"1";
+    if ([model.warringstatus isEqual:@4] || [model.type isEqual:@5] || [model.type isEqual:@6]){
+        faultStatus = @"3";
+    }
     if ([model.type isEqualToString:@"1"]) {//告警
         JZProjectMainVController *mainVc = [JZProjectMainVController shareMainProject];
         mainVc.titleName = model.projectname;
         mainVc.projectId = model.projectid;
-        mainVc.faultStatus = @"1";
+        mainVc.faultStatus = faultStatus;
         mainVc.hidesBottomBarWhenPushed = YES;
         self.hidesBottomBarWhenPushed = NO;
         //    [self presentViewController:mainVc animated:YES completion:nil];
